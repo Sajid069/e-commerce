@@ -14,28 +14,20 @@ class OnBoardingScreen extends StatelessWidget {
         children: [
           PageView(
             children: const [
-              onBoardingPage(
+              OnboardingPage(
                 image: TImages.onBoardingImage1,
                 title: TTexts.onBoardingTitle1,
-                subTitle: TTexts.onBoardingSubtitle1,
+                subtitle: TTexts.onBoardingSubtitle1,
               ),
-            ],
-          ),
-          PageView(
-            children: const [
-              onBoardingPage(
+              OnboardingPage(
                 image: TImages.onBoardingImage2,
                 title: TTexts.onBoardingTitle2,
-                subTitle: TTexts.onBoardingSubtitle2,
+                subtitle: TTexts.onBoardingSubtitle2,
               ),
-            ],
-          ),
-          PageView(
-            children: const [
-              onBoardingPage(
+              OnboardingPage(
                 image: TImages.onBoardingImage3,
                 title: TTexts.onBoardingTitle3,
-                subTitle: TTexts.onBoardingSubtitle3,
+                subtitle: TTexts.onBoardingSubtitle3,
               ),
             ],
           ),
@@ -45,15 +37,15 @@ class OnBoardingScreen extends StatelessWidget {
   }
 }
 
-class onBoardingPage extends StatelessWidget {
-  const onBoardingPage({
+class OnboardingPage extends StatelessWidget {
+  const OnboardingPage({
     super.key,
     required this.image,
     required this.title,
-    required this.subTitle,
+    required this.subtitle,
   });
 
-  final String image, title, subTitle;
+  final image, title, subtitle;
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +65,7 @@ class onBoardingPage extends StatelessWidget {
           ),
           const SizedBox(height: Tsizes.spaceBtwItems),
           Text(
-            subTitle,
+            subtitle,
             style: Theme.of(context).textTheme.bodyMedium,
             textAlign: TextAlign.center,
           ),
