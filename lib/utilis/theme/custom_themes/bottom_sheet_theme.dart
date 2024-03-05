@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TBottomSheetTheme {
   TBottomSheetTheme._();
 
-  static BottomSheetThemeData LightBottomSheetTheme = BottomSheetThemeData(
+  static BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
     backgroundColor: Colors.white,
     modalBackgroundColor: Colors.white,

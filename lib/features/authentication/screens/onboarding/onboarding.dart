@@ -1,18 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:shop/features/authentication/controllers/onboarding_controller.dart';
+import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
+import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
 import 'package:shop/utilis/constants/image_strings.dart';
-import 'package:shop/utilis/constants/sizes.dart';
 import 'package:shop/utilis/constants/text_strings.dart';
-import 'package:shop/utilis/helpers/helper_functions.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
+
     return Scaffold(
       body: Stack(
         children: [
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const [
               OnboardingPage(
                 image: TImages.onBoardingImage1,
@@ -31,44 +39,9 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ],
           ),
-        ],
-      ),
-    );
-  }
-}
-
-class OnboardingPage extends StatelessWidget {
-  const OnboardingPage({
-    super.key,
-    required this.image,
-    required this.title,
-    required this.subtitle,
-  });
-
-  final image, title, subtitle;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(Tsizes.defaultSpace),
-      child: Column(
-        children: [
-          Image(
-            width: THelperFunctions.screenWidth() * 0.8,
-            height: THelperFunctions.screenHeight() * 0.6,
-            image: AssetImage(image),
-          ),
-          Text(
-            title,
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Tsizes.spaceBtwItems),
-          Text(
-            subtitle,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
+          const OnBoardingSkip(),
+          const OnBoardingDotNavigation(),
+          const OnBoardingNextButton(),
         ],
       ),
     );
