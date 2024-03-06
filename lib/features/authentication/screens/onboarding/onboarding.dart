@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shop/features/authentication/controllers/onboarding_controller.dart';
-import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
-import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
-import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:shop/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:shop/features/authentication/screens/onboarding/onboarding/onboarding_dot_navigation.dart';
+import 'package:shop/features/authentication/screens/onboarding/onboarding/onboarding_next_button.dart';
+import 'package:shop/features/authentication/screens/onboarding/onboarding/onboarding_page.dart';
+import 'package:shop/features/authentication/screens/onboarding/onboarding/onboarding_skip.dart';
 import 'package:shop/utilis/constants/image_strings.dart';
 import 'package:shop/utilis/constants/text_strings.dart';
 
