@@ -60,7 +60,7 @@ class TLoginForm extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     TTexts.forgetPassword,
                   ),
                 ),
@@ -73,7 +73,7 @@ class TLoginForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   TTexts.signIn,
                 ),
               ),
