@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shop/app.dart';
-import 'package:shop/utilis/constants/colors.dart';
-import 'package:shop/utilis/theme/theme.dart';
 
 void main() {
 
