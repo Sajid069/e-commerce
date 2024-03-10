@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:shop/features/authentication/screens/login/login.dart';
 import 'package:shop/utilis/constants/image_strings.dart';
 import 'package:shop/utilis/constants/sizes.dart';

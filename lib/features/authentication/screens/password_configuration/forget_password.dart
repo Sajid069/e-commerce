@@ -13,7 +13,7 @@ class ForgetPassword extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -31,7 +31,7 @@ class ForgetPassword extends StatelessWidget {
 
             // Text field
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: TTexts.email,
                 prefixIcon: Icon(
                   Iconsax.direct_right,
