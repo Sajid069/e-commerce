@@ -30,10 +30,10 @@ class TTermsAndConditionCheckbox extends StatelessWidget {
               TextSpan(
                 text: '${TTexts.privacyPolicy} ',
                 style: Theme.of(context).textTheme.bodyMedium!.apply(
-                      color: dark ? TColors.white : TColors.primaryColor,
+                      color: dark ? TColors.white : TColors.primary,
                       decoration: TextDecoration.underline,
                       decorationColor:
-                          dark ? TColors.white : TColors.primaryColor,
+                          dark ? TColors.white : TColors.primary,
                     ),
               ),
               TextSpan(
@@ -43,10 +43,10 @@ class TTermsAndConditionCheckbox extends StatelessWidget {
               TextSpan(
                 text: TTexts.termsOfUse,
                 style: Theme.of(context).textTheme.bodyMedium!.apply(
-                      color: dark ? TColors.white : TColors.primaryColor,
+                      color: dark ? TColors.white : TColors.primary,
                       decoration: TextDecoration.underline,
                       decorationColor:
-                          dark ? TColors.white : TColors.primaryColor,
+                          dark ? TColors.white : TColors.primary,
                     ),
               ),
             ],
