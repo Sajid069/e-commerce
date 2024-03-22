@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
                   THomeAppBar(),
 
                   // -- Searchbar
-
+                  SearchBar(),
                   // -- Categories
                 ],
               ),
