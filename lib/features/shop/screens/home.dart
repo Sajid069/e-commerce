@@ -44,15 +44,15 @@ class HomeScreen extends StatelessWidget {
                           showActionButton: false,
                           textColor: TColors.white,
                         ),
+                        SizedBox(
+                          height: TSizes.spaceBtwItems,
+                        ),
+
+                        //// -- Categories
+                        THomeCategories(),
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: TSizes.spaceBtwItems,
-                  ),
-
-                  //// -- Categories
-                  THomeCategories(),
                 ],
               ),
             ),

@@ -15,7 +15,7 @@ class THomeCategories extends StatelessWidget {
       height: 80,
       child: ListView.builder(
         shrinkWrap: true,
-        padding: EdgeInsets.only(left: TSizes.defaultSpace),
+        // padding: EdgeInsets.only(left: TSizes.defaultSpace),
         itemCount: 100,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
